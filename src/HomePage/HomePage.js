@@ -6,10 +6,12 @@ import NewCard from "../newCard/NewCard";
 import AnimatedButton from "../hoverCards/cards";
 import About from "../aboutUs/About";
 import ByNumber from "../byNumber/ByNumber";
+import GradientText from "../splash/Splash";
 
 const HomePage = () => {
   return (
     <>
+      <GradientText />
       <ByNumber />
       <About />
       <AnimatedButton />

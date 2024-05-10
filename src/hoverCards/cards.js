@@ -22,7 +22,7 @@ const CardGrid = () => {
     },
     {
       number: "4",
-      title: "Image Analysis3D Modelling",
+      title: "Image Analysis3D Modelling & Desiging",
       content:
         "We offer services for automated generation of 3D assets with realistic shapes and textures. We animate the 3D models with voice and videos with an aim to retarget voice and/or expressions with pose from a single Image/video.",
     },
@@ -36,7 +36,7 @@ const CardGrid = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="relative dark:bg-gray-800 text-black dark:text-white p-6 rounded-2xl card text-3xl"
+            className="relative dark:bg-gray-800 text-black dark:text-white p-6 rounded-2xl card text-3xl truncate"
           >
             <div className="mb-4">
               <div className="flex items-center relative mb-10">
