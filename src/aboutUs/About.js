@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="md:m-10 md:scale-75 hover:scale-90 md:bg-blue-100 rounded-2xl p-10 bg-blue-200">
+    <div className="md:m-10 md:scale-100 hover:scale-105 md:bg-blue-100 dark:bg-white dark:text-black rounded-2xl p-10">
       <div className="md:flex flex-column md:gap-80 justify-center mt-16 mb-16">
         <div className="md:order-last order-first justify-center">
           <img

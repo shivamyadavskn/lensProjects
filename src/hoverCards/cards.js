@@ -22,7 +22,7 @@ const CardGrid = () => {
     },
     {
       number: "4",
-      title: "Image Analysis3D Modelling and Design.",
+      title: "Image Analysis3D Modelling",
       content:
         "We offer services for automated generation of 3D assets with realistic shapes and textures. We animate the 3D models with voice and videos with an aim to retarget voice and/or expressions with pose from a single Image/video.",
     },
