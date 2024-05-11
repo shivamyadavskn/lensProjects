@@ -1,15 +1,17 @@
 import React from "react";
-
-const ImageContent = () => {
+import Diversity3Icon from "@mui/icons-material/Diversity3";
+import AddModeratorIcon from '@mui/icons-material/AddModerator';
+import GavelIcon from '@mui/icons-material/Gavel';
+function Qualifications() {
   return (
-    <div className="NewVision_qualification__sections__qWk8Y">
+    <div className="qulisect">
       <div>
-        <div className="NewVision_qualification__data__s3l3X">
+        <div className="qulisect_data_new">
           <div>
-            <h3 className="NewVision_qualification__title__HUzhX">
+            <h3 className="title_qual">
               Diversity & Fairness
             </h3>
-            <span className="NewVision_qualification__subtitle__EQ6HD">
+            <span className="subtitle_qual">
               When training our AI models, we consider ethical and social
               implications of algorithm-based decision making. Our solutions use
               high-quality and fairly-represented data sets to eliminate human
@@ -17,43 +19,23 @@ const ImageContent = () => {
             </span>
           </div>
           <div>
-            <span className="NewVision_qualification__rounder__zWnvF">
-              <svg
-                aria-hidden="true"
-                role="img"
-                className="NewVision_iconCol__90VMl iconify iconify--ic"
-                width="38"
-                height="32"
-                viewBox="0 0 24 24"
-              >
-                {/* SVG paths go here */}
-              </svg>
-            </span>
-            <span className="NewVision_qualification__line__aQioP"></span>
+            <Diversity3Icon className="testmui iconify iconify--ic border-icon" />
+            <span className="subtitle_qual_lin"></span>
           </div>
         </div>
-        <div className="NewVision_qualification__data__s3l3X">
+        <div className="qulisect_data_new">
           <div></div>
-          <div>
-            <span className="NewVision_qualification__rounder__zWnvF">
-              <svg
-                aria-hidden="true"
-                role="img"
-                className="NewVision_iconCol__90VMl iconify iconify--carbon"
-                width="40"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                {/* SVG paths go here */}
-              </svg>
-            </span>
-            <span className="NewVision_qualification__line__aQioP"></span>
+          <div className="">
+            <AddModeratorIcon
+              className="testmui iconify iconify--carbon border-icon"
+            />
+            <span className="border-3 border-black border-dotted"></span>
           </div>
           <div>
-            <h3 className="NewVision_qualification__title__HUzhX">
+            <h3 className="title_qual">
               Regulatory Compliance
             </h3>
-            <span className="NewVision_qualification__subtitle__EQ6HD">
+            <span className="subtitle_qual">
               Working with clients globally, LENS acknowledges applicable data
               privacy regulations, such as the GDPR, HIPAA and others, in all
               our solutions handling sensitive data. We also ensure our
@@ -62,12 +44,12 @@ const ImageContent = () => {
             </span>
           </div>
         </div>
-        <div className="NewVision_qualification__data__s3l3X">
+        <div className="qulisect_data_new">
           <div>
-            <h3 className="NewVision_qualification__title__HUzhX">
+            <h3 className="title_qual">
               Code of Ethics
             </h3>
-            <span className="NewVision_qualification__subtitle__EQ6HD">
+            <span className="subtitle_qual">
               LENS believes in a just, non-violent world of equality and
               fairness. We prize democratic values, civil liberties and open and
               informed debate. When used to further these values,
@@ -76,24 +58,13 @@ const ImageContent = () => {
             </span>
           </div>
           <div>
-            <span className="NewVision_qualification__rounder__zWnvF">
-              <svg
-                aria-hidden="true"
-                role="img"
-                className="NewVision_iconCol__90VMl iconify iconify--emojione-monotone"
-                width="40"
-                height="32"
-                viewBox="0 0 64 64"
-              >
-                {/* SVG paths go here */}
-              </svg>
-            </span>
-            <span className="NewVision_qualification__line__aQioP"></span>
+            <GavelIcon className="testmui iconify iconify--emojione-monotone border-icon" />
+            <span className="subtitle_qual_lin"></span>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default ImageContent;
+export default Qualifications;

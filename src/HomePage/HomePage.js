@@ -9,19 +9,21 @@ import ByNumber from "../byNumber/ByNumber";
 import GradientText from "../splash/Splash";
 import ImageSection from "../marque/Marque";
 import ImageContent from "../imageContent/imageContent";
+import NavBar from "../navBar/NavBar";
 
 const HomePage = () => {
   return (
     <>
+      <NavBar />
+      <About />
+      <AnimatedButton />
+      <GradientText />
+      <NewCard />
       <ImageContent />
       <ImageSection />
-      <About />
-      <GradientText />
       <ByNumber />
-      <AnimatedButton />
-      <NewCard />
-      <ContactForm />
       <FrequentlyAskedQuestions />
+      <ContactForm />
       <Footer />
     </>
   );

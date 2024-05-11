@@ -82,8 +82,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-gray-800 text-white text-center p-10 flex font-sans justify-between text-base">
-        <div className="text-customGray dark:text-white">
+      <footer className="bg-btnColor text-white text-center p-10 flex font-sans justify-between text-base">
+        <div className="text-gray-600 dark:text-white">
           2023 <span className="text-white dark:text-white">LENS, Inc.</span>{" "}
           All rights reserved.
         </div>
