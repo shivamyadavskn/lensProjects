@@ -30,42 +30,44 @@ const CardGrid = () => {
   ];
 
   return (
-    <div className="text-center dark:text-white text-black font-serif text-5xl">
-      We provide Artificial Intelligence Services
-      <div className="grid md:grid-cols-2">
-        {cards.map((card, index) => (
-          <div
-            key={index}
-            className="relative dark:bg-gray-800 text-black dark:text-white p-6 rounded-2xl card text-3xl"
-          >
-            <div className="mb-4">
-              <div className="flex items-center relative mb-10">
-                <span className="text-9xl font-bold text-gray-700 transition-opacity duration-300">
-                  0
-                </span>
-                <span
-                  className="text-9xl font-bold transition-opacity duration-300 card-number"
-                  style={{ zIndex: 1 }}
-                >
-                  {card.number}
-                </span>
-                <span
-                  className="ml-4 text-4xl absolute left-0 transition-transform duration-300 card-title"
-                  style={{
-                    marginLeft: `${card.number.length * 16 + 16}px`,
-                    zIndex: 1,
-                  }}
-                >
-                  {card.title}
-                </span>
+    <>
+      <div className="font-serif font-bold text-3xl text-center">Services</div>
+      <div className="text-center dark:text-white text-black font-serif text-5xl">
+        We provide Artificial Intelligence Services
+        <div className="grid md:grid-cols-2">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="relative dark:bg-gray-800 text-black dark:text-white p-6 rounded-2xl card text-3xl"
+            >
+              <div className="mb-4">
+                <div className="flex items-center relative mb-10">
+                  <span className="text-9xl font-bold text-gray-700 transition-opacity duration-300">
+                    0
+                  </span>
+                  <span
+                    className="text-9xl font-bold transition-opacity duration-300 card-number"
+                    style={{ zIndex: 1 }}
+                  >
+                    {card.number}
+                  </span>
+                  <span
+                    className="ml-4 text-4xl absolute left-0 transition-transform duration-300 card-title"
+                    style={{
+                      marginLeft: `${card.number.length * 16 + 16}px`,
+                      zIndex: 1,
+                    }}
+                  >
+                    {card.title}
+                  </span>
+                </div>
+                <div className="font-sans text-3xl">{card.content}</div>
               </div>
-              <div className="font-sans text-3xl">{card.content}</div>
             </div>
-          </div>
-        ))}
+          ))}
 
-        <style>
-          {`
+          <style>
+            {`
         .card{
             scale:0.8;
             
@@ -92,9 +94,10 @@ const CardGrid = () => {
           }
 
         `}
-        </style>
+          </style>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
