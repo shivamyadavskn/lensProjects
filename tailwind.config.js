@@ -6,8 +6,9 @@ module.exports = {
     extend: {
       colors: {
         customGray: "#fcfbf7",
-        btnColor:"#272e5c",
-        textColor:"#8a8a8a",
+        btnColor: "#272e5c",
+        textColor: "#8a8a8a",
+        bgcolor: "#242424",
       },
     },
   },

@@ -2,8 +2,8 @@ import React from "react";
 
 const ByNumber = () => {
   return (
-    <div className="bg-btnColor m-0 w-auto">
-      <div className="md:text-bold text-center md:font-5xl">By the numbers</div>
+    <div className="bg-btnColor w-auto md:mt-10 md:mb-10">
+      <div className="md:text-bold text-center md:font-5xl md:text-5xl md:text-white">By the numbers</div>
       <div className="md:flex flex justify-around md:m-10 md:p-10 rounded-sm text-white md:text-center">
         <div className="text-center">
           <p className="font-mono md:font-extrabold md:text-5xl">

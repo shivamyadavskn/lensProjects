@@ -36,7 +36,7 @@ const CardGrid = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="relative dark:bg-gray-800 text-black dark:text-white p-6 rounded-2xl card text-3xl truncate"
+            className="relative dark:bg-gray-800 text-black dark:text-white p-6 rounded-2xl card text-3xl"
           >
             <div className="mb-4">
               <div className="flex items-center relative mb-10">

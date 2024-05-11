@@ -1,0 +1,123 @@
+.splash {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  animation: backgroundPan 2s linear infinite;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #9747ff;
+  --tw-gradient-from-position: 0%;
+  --tw-gradient-to: #ee216b;
+  --tw-gradient-to-position: 100%;
+  --tw-gradient-via: #2f80ed;
+  --tw-gradient-via-position: 50%;
+  --tw-gradient-stops: var(--tw-gradient-from) var(--tw-gradient-from-position),
+    var(--tw-gradient-via) var(--tw-gradient-via-position),
+    var(--tw-gradient-to) var(--tw-gradient-to-position);
+}
+
+@keyframes backgroundPan {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '→';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+  @media (min-width: 800px) and (max-width: 1000px) {
+    .marque_test {
+        transform: scale(.7);
+    }
+}
+
+@media (max-width: 1200px) {
+    .marque_test {
+        transform: scale(.85);
+    }
+}
+
+.marque_test {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    gap: 2rem;
+    animation: NewClient_slideAnimation__c2hb5 12s linear infinite;
+}
+
+.marque_test:nth-child(2) {
+    animation-delay: -2s;
+}
+
+@keyframes NewClient_slideAnimation__c2hb5 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    54% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    56% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    90% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

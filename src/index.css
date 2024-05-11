@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.NewVision_qualification__sections__qWk8Y {
+    display: grid;
+    grid-template-columns: .5fr;
+    justify-content: center;
+}
+
+.NewVision_qualification__data__s3l3X {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    width: 100%;
+}
+
+
+.NewVision_qualification__title__HUzhX {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+
+NewVision_qualification__subtitle__EQ6HD {
+    display: inline-block;
+    font-size: 16px;
+    margin: 1rem 0;
+    color: #8a8a8a;
+    transition: .3s;
+}

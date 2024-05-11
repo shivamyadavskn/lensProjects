@@ -20,9 +20,10 @@ const About = () => {
             custom AI - powered solutions for your business so you don't have
             to.
           </p>
-          <button className="md:h-16 md:w-48 h-16 w-48 text-black border-2 border-black md:rounded-2xl rounded-xl my-5 justify-center">
+          {/* <button className="md:h-16 md:w-48 h-16 w-48 text-black border-2 border-black md:rounded-2xl rounded-xl my-5 justify-center">
             Learn More &gt;
-          </button>
+          </button> */}
+           <button className="md:hover:bg-white md:hover:text-black md:h-16 md:w-48 text-black border-2 border-black md:rounded-2xl rounded-xl my-5 justify-center button" style={{ verticalAlign: "middle" }}><span>Learn More </span></button>
         </div>
       </div>
     </div>

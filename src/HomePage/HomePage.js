@@ -7,13 +7,17 @@ import AnimatedButton from "../hoverCards/cards";
 import About from "../aboutUs/About";
 import ByNumber from "../byNumber/ByNumber";
 import GradientText from "../splash/Splash";
+import ImageSection from "../marque/Marque";
+import ImageContent from "../imageContent/imageContent";
 
 const HomePage = () => {
   return (
     <>
+      <ImageContent />
+      <ImageSection />
+      <About />
       <GradientText />
       <ByNumber />
-      <About />
       <AnimatedButton />
       <NewCard />
       <ContactForm />
