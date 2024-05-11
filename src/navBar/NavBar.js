@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
-import LightModeIcon from '@mui/icons-material/LightMode';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 const NavBar = ({ darkMode, toggleDarkMode }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -67,8 +67,8 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
               <Button
                 onClick={toggleDarkMode}
                 variant="contained"
-                color={darkMode ? "secondary" : "primary"}
                 size="small"
+                style={{ backgroundColor: "black" }}
               >
                 {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
               </Button>
@@ -87,30 +87,42 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
         </div>
         <div className="md:flex gap-4 hidden">
           <div>
-            <a href="#" className="text-gray-800 dark:text-white">
+            <a
+              href="#"
+              className="text-gray-800 dark:text-white  hover:text-blue-500 px-3 py-2 rounded-md"
+            >
               MakeMyWeb
             </a>
           </div>
           <div>
-            <a href="#" className="text-gray-800 dark:text-white">
+            <a
+              href="#"
+              className="text-gray-800 dark:text-white  hover:text-blue-500 px-3 py-2 rounded-md"
+            >
               Home
             </a>
           </div>
           <div>
-            <a href="#" className="text-gray-800 dark:text-white">
+            <a
+              href="#"
+              className="text-gray-800 dark:text-white  hover:text-blue-500 px-3 py-2 rounded-md"
+            >
               Company
             </a>
           </div>
           <div>
-            <a href="#" className="text-gray-800 dark:text-white">
+            <a
+              href="#"
+              className="text-gray-800 dark:text-white  hover:text-blue-500 px-3 py-2 rounded-md"
+            >
               Blog
             </a>
           </div>
           <Button
             onClick={toggleDarkMode}
             variant="contained"
-            color={darkMode ? "secondary" : "primary"}
             className="h-5 w-5"
+            style={{ backgroundColor: "black" }}
           >
             {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
           </Button>
