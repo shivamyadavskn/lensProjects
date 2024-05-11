@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import Button from "@mui/material/Button";
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
-const NavBar = () => {
+const NavBar = ({ darkMode, toggleDarkMode }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
@@ -42,29 +44,42 @@ const NavBar = () => {
         <div className="p-4">
           <ul>
             <li className="py-2">
-              <a href="#" className="text-gray-800">MakeMyWeb</a>
+              <a href="#" className="text-gray-800 dark:text-white">
+                MakeMyWeb
+              </a>
             </li>
             <li className="py-2">
-              <a href="#" className="text-gray-800">Home</a>
+              <a href="#" className="text-gray-800 dark:text-white">
+                Home
+              </a>
             </li>
             <li className="py-2">
-              <a href="#" className="text-gray-800">Company</a>
+              <a href="#" className="text-gray-800 dark:text-white">
+                Company
+              </a>
             </li>
             <li className="py-2">
-              <a href="#" className="text-gray-800">Blog</a>
+              <a href="#" className="text-gray-800 dark:text-white">
+                Blog
+              </a>
             </li>
             <li className="py-2">
-              <button>
-                <a className="text-gray-800">A</a>
-              </button>
+              <Button
+                onClick={toggleDarkMode}
+                variant="contained"
+                color={darkMode ? "secondary" : "primary"}
+                size="small"
+              >
+                {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
+              </Button>
             </li>
           </ul>
         </div>
       </div>
 
       {/* Desktop navigation */}
-      <div className="md:flex md:justify-between">
-        <div className="">
+      <div className="md:flex md:justify-between dark:text-white">
+        <div className="dark:text-white">
           <img
             src="https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnav_logo.e5fb945a.png&w=96&q=75"
             alt="not found"
@@ -72,20 +87,33 @@ const NavBar = () => {
         </div>
         <div className="md:flex gap-4 hidden">
           <div>
-            <a href="#" className="text-gray-800">MakeMyWeb</a>
+            <a href="#" className="text-gray-800 dark:text-white">
+              MakeMyWeb
+            </a>
           </div>
           <div>
-            <a href="#" className="text-gray-800">Home</a>
+            <a href="#" className="text-gray-800 dark:text-white">
+              Home
+            </a>
           </div>
           <div>
-            <a href="#" className="text-gray-800">Company</a>
+            <a href="#" className="text-gray-800 dark:text-white">
+              Company
+            </a>
           </div>
           <div>
-            <a href="#" className="text-gray-800">Blog</a>
+            <a href="#" className="text-gray-800 dark:text-white">
+              Blog
+            </a>
           </div>
-          <button>
-            <a className="text-gray-800">A</a>
-          </button>
+          <Button
+            onClick={toggleDarkMode}
+            variant="contained"
+            color={darkMode ? "secondary" : "primary"}
+            className="h-5 w-5"
+          >
+            {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
+          </Button>
         </div>
       </div>
     </div>

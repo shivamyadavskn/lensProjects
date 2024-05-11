@@ -11,10 +11,10 @@ import ImageSection from "../marque/Marque";
 import ImageContent from "../imageContent/imageContent";
 import NavBar from "../navBar/NavBar";
 
-const HomePage = () => {
+const HomePage = ({ darkMode, toggleDarkMode }) => {
   return (
     <>
-      <NavBar />
+      <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <About />
       <AnimatedButton />
       <GradientText />
